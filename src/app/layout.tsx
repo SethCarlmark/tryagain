@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Outfit, Roboto } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 
 const outfit = Outfit({
@@ -30,6 +31,7 @@ export default function RootLayout({
         className={`${outfit.variable} ${roboto.variable} antialiased bg-background min-h-screen`}
       >
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
