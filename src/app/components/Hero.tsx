@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="absolute left-0 bottom-0 w-96 h-96 rounded-full bg-light-blue blur-[250px] -z-10"></div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div>
+        <div className="order-2 lg:order-1">
           <h1 className="font-outfit font-bold text-4xl md:text-5xl lg:text-7xl capitalize leading-tight text-white mb-6">
             discover and collect rare NFTs
           </h1>
@@ -30,7 +30,7 @@ export default function Hero() {
             </Link>
           </div>
         </div>
-        <div className="relative flex justify-center lg:justify-end">
+        <div className="relative flex justify-center lg:justify-end order-1 lg:order-2">
           <Image
             src="/images/hero-image.png"
             alt="NFT artwork showcase"
